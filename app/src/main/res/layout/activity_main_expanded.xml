@@ -23,9 +23,9 @@
         android:layout_height="@dimen/cube_edge_expanded"
         android:layout_marginVertical="@dimen/margin_expanded"
         android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="@id/view1"
         app:layout_constraintEnd_toStartOf="@id/view3"
-        app:layout_constraintStart_toEndOf="@id/view1" />
+        app:layout_constraintStart_toEndOf="@id/view1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view3"
@@ -33,9 +33,9 @@
         android:layout_height="@dimen/cube_edge_expanded"
         android:layout_marginVertical="@dimen/margin_expanded"
         android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="@id/view1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/view2" />
+        app:layout_constraintStart_toEndOf="@id/view2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view4"
@@ -53,9 +53,9 @@
         android:layout_height="@dimen/cube_edge_expanded"
         android:layout_marginVertical="@dimen/margin_expanded"
         android:background="@color/orange"
-        app:layout_constraintBottom_toBottomOf="@id/view4"
         app:layout_constraintEnd_toStartOf="@id/view6"
-        app:layout_constraintStart_toEndOf="@id/view4" />
+        app:layout_constraintStart_toEndOf="@id/view4"
+        app:layout_constraintTop_toBottomOf="@id/view1" />
 
     <View
         android:id="@+id/view6"
@@ -63,9 +63,9 @@
         android:layout_height="@dimen/cube_edge_expanded"
         android:layout_marginVertical="@dimen/margin_expanded"
         android:background="@color/orange"
-        app:layout_constraintBottom_toBottomOf="@id/view4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/view5" />
+        app:layout_constraintStart_toEndOf="@id/view5"
+        app:layout_constraintTop_toBottomOf="@id/view1" />
 
     <View
         android:id="@+id/view7"
@@ -84,9 +84,9 @@
         android:layout_margin="40dp"
         android:layout_marginVertical="@dimen/margin_expanded"
         android:background="@color/green"
-        app:layout_constraintBottom_toBottomOf="@id/view7"
         app:layout_constraintEnd_toStartOf="@id/view9"
-        app:layout_constraintStart_toEndOf="@id/view7" />
+        app:layout_constraintStart_toEndOf="@id/view7"
+        app:layout_constraintTop_toBottomOf="@id/view4" />
 
     <View
         android:id="@+id/view9"
@@ -94,8 +94,8 @@
         android:layout_height="@dimen/cube_edge_expanded"
         android:layout_marginVertical="@dimen/margin_expanded"
         android:background="@color/green"
-        app:layout_constraintBottom_toBottomOf="@id/view7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/view8" />
+        app:layout_constraintStart_toEndOf="@id/view8"
+        app:layout_constraintTop_toBottomOf="@id/view4" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
